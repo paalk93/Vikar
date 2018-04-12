@@ -31,3 +31,41 @@ function pyramid(){
   console.log(thisLevel)
   }
 }
+
+
+var myList = ["Buy games", "Play games", "Win games"];
+
+function consoleLog(){
+for (var i = 0; i < myList.length; i++){
+  console.log(myList[i]);
+}
+}
+
+function removeList(){
+  myList.splice(-1,1);
+  printList()
+}
+
+function pushList(){
+  myList.push(document.getElementById("list").value)
+  printList()
+}
+
+function printList(){
+  if(myList.length == 0){
+    myList = ["Buy games", "Play games", "Win games"];
+  }
+  var listeContainer = document.getElementById('print');
+  listeContainer.innerHTML = '';
+  for (var i = 0; i < myList.length; i++){
+    var listeItem = myList[i];
+    //var element = document.createElement('li');
+    //element.innerHTML = listeItem;
+     listeContainer.innerHTML += '<li>' + listeItem + '</li>';
+    //element.className = "notdone";
+    //listeContainer.appendChild(element);
+
+  }
+
+//  consoleLog();
+}
