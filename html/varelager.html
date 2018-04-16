@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/varelager.css" rel="stylesheet">
+
+    <title>Html Base</title>
+
+  </head>
+
+
+  <body>
+
+    <div>
+      <h3>Products</h3>
+      <table class="border">
+        <thead>
+          <tr>
+           <th>ID</th>
+           <th>Varenavn</th>
+           <th>Pris</th>
+           <th>Antall</th>
+           <th>Knapper</th>
+         </tr>
+         <tr>
+          <td><input id="id" type="text" value=""></td>
+          <td><input id="varenavn" type="text" value=""></td>
+          <td><input id="pris" type="text" value=""></td>
+          <td><input id="antall" type="text" value=""></td>
+          <td><button onclick="push()">Add</button></td>
+        </tr>
+        </thead>
+        <tbody id="print">
+
+
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+    <script src="../javascript/varelager.js"></script>
+  </body>
+</html>

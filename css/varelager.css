@@ -1,0 +1,9 @@
+body{
+  background-color:grey;
+}
+
+.border{
+  border:solid 1px black;
+  padding:1em;
+  text-align:center;
+}
