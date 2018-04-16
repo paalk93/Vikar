@@ -7,8 +7,6 @@
  ]
 
 
-
-
 function push(){
   var nyttObjekt = {
     "id":Number(document.getElementById("id").value),
@@ -47,7 +45,5 @@ function print(){
     vareLagerContainer.appendChild(rad);
   }
 }
-
-
 
 print()
