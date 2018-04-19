@@ -1,5 +1,11 @@
-body{
-  background-color:grey;
+.bg-primary{
+  background-color:#f2f2f2;
+}
+
+.bg-secondary{
+  background-color:black;
+  color:white;
+  transition: 2s;
 }
 
 .border{

@@ -45,5 +45,67 @@ function print(){
     vareLagerContainer.appendChild(rad);
   }
 }
+thId.addEventListener("click",sortId)
+thNavn.addEventListener("click",sortNavn)
+thPris.addEventListener("click",sortPris)
+thAntall.addEventListener("click",sortAntall);
+
+function sortAntall(){
+  vareLager.sort(function (a, b) {
+    if (a.antall > b.antall) {
+      return 1;
+    }
+    else if (a.antall < b.antall) {
+       return -1;
+    }
+      return 0;
+     });
+     print()
+}
+function sortPris(){
+  vareLager.sort(function (a, b) {
+    if (a.pris > b.pris) {
+      return 1;
+    }
+    else if (a.pris < b.pris) {
+       return -1;
+    }
+      return 0;
+     });
+     print()
+}
+function sortNavn(){
+  vareLager.sort(function (a, b) {
+    if (a.varenavn > b.varenavn) {
+      return 1;
+    }
+    else if (a.varenavn < b.varenavn) {
+       return -1;
+    }
+      return 0;
+     });
+     print()
+}
+function sortId(){
+  vareLager.sort(function (a, b) {
+    if (a.id > b.id) {
+      return 1;
+    }
+    else if (a.id < b.id) {
+       return -1;
+    }
+      return 0;
+     });
+     print()
+}
+
+
+
+function colorChange (){
+  document.getElementsByClassName("bg-primary")[0].classList.add("bg-secondary");
+  document.getElementsByClassName("bg-secondary")[0].classList.remove("bg-primary")
+  //var element = document.querySelector("body");
+  //element.className ="bg-secondary";
+}
 
 print()
