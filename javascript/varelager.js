@@ -15,10 +15,10 @@ function push(){
     "antall": Number(document.getElementById("antall").value),
   };
   vareLager.push(nyttObjekt)
-  print();
+  printTable();
 }
 
-function print(){
+function printTable(){
   var vareLagerContainer = document.getElementById('print');
   vareLagerContainer.innerHTML = '';
 
@@ -45,6 +45,7 @@ function print(){
     vareLagerContainer.appendChild(rad);
   }
 }
+
 thId.addEventListener("click",sortId)
 thNavn.addEventListener("click",sortNavn)
 thPris.addEventListener("click",sortPris)
@@ -60,7 +61,7 @@ function sortAntall(){
     }
       return 0;
      });
-     print()
+     printTable()
 }
 function sortPris(){
   vareLager.sort(function (a, b) {
@@ -72,7 +73,7 @@ function sortPris(){
     }
       return 0;
      });
-     print()
+     printTable()
 }
 function sortNavn(){
   vareLager.sort(function (a, b) {
@@ -84,7 +85,7 @@ function sortNavn(){
     }
       return 0;
      });
-     print()
+     printTable()
 }
 function sortId(){
   vareLager.sort(function (a, b) {
@@ -96,7 +97,7 @@ function sortId(){
     }
       return 0;
      });
-     print()
+     printTable()
 }
 
 
@@ -107,5 +108,4 @@ function colorChange (){
   //var element = document.querySelector("body");
   //element.className ="bg-secondary";
 }
-
-print()
+printTable();
